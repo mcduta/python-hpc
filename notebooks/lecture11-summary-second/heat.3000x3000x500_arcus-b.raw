@@ -1,0 +1,45 @@
+ computing 500 iterations on a 3000x3000 grid
+ stepper numpy, 500 iterations, 108.105036 seconds, 0.663581 rel error
+ stepper fortran, 500 iterations, 13.221476 seconds, 0.663581 rel error
+ stepper ctypes, 500 iterations, 10.403148 seconds, 0.663581 rel error
+ stepper cython, 500 iterations, 18.348351 seconds, 0.663587 rel error
+ computing 500 iterations on a 3000x3000 grid
+ stepper numpy, 500 iterations, 110.398737 seconds, 0.663581 rel error
+ stepper fortran, 500 iterations, 6.465538 seconds, 0.663581 rel error
+ stepper ctypes, 500 iterations, 6.995966 seconds, 0.663581 rel error
+ stepper cython, 500 iterations, 9.298267 seconds, 0.663587 rel error
+ computing 500 iterations on a 3000x3000 grid
+ stepper numpy, 500 iterations, 108.058870 seconds, 0.663581 rel error
+ stepper fortran, 500 iterations, 3.684739 seconds, 0.663581 rel error
+ stepper ctypes, 500 iterations, 6.231919 seconds, 0.663581 rel error
+ stepper cython, 500 iterations, 6.339393 seconds, 0.663587 rel error
+ computing 500 iterations on a 3000x3000 grid
+ stepper numpy, 500 iterations, 109.176379 seconds, 0.663581 rel error
+ stepper fortran, 500 iterations, 3.304595 seconds, 0.663581 rel error
+ stepper ctypes, 500 iterations, 6.175140 seconds, 0.663581 rel error
+ stepper cython, 500 iterations, 6.145939 seconds, 0.663587 rel error
+ computing 500 iterations on a 3000x3000 grid
+ stepper numpy, 500 iterations, 108.102072 seconds, 0.663581 rel error
+ stepper fortran, 500 iterations, 3.230256 seconds, 0.663581 rel error
+ stepper ctypes, 500 iterations, 6.238717 seconds, 0.663581 rel error
+ stepper cython, 500 iterations, 6.004182 seconds, 0.663587 rel error
+ computing 500 iterations on a 3000x3000 grid
+ stepper numpy, 500 iterations, 108.305855 seconds, 0.663581 rel error
+ stepper fortran, 500 iterations, 3.426288 seconds, 0.663581 rel error
+ stepper ctypes, 500 iterations, 6.294122 seconds, 0.663581 rel error
+ stepper cython, 500 iterations, 5.991240 seconds, 0.663587 rel error
+ computing 500 iterations on a 3000x3000 grid
+ stepper numpy, 500 iterations, 108.218399 seconds, 0.663581 rel error
+ stepper fortran, 500 iterations, 3.538114 seconds, 0.663581 rel error
+ stepper ctypes, 500 iterations, 6.282642 seconds, 0.663581 rel error
+ stepper cython, 500 iterations, 5.957590 seconds, 0.663587 rel error
+ computing 500 iterations on a 3000x3000 grid
+ stepper numpy, 500 iterations, 110.089873 seconds, 0.663581 rel error
+ stepper fortran, 500 iterations, 3.642576 seconds, 0.663581 rel error
+ stepper ctypes, 500 iterations, 6.269504 seconds, 0.663581 rel error
+ stepper cython, 500 iterations, 5.988872 seconds, 0.663587 rel error
+ computing 500 iterations on a 3000x3000 grid
+ stepper numpy, 500 iterations, 108.470361 seconds, 0.663581 rel error
+ stepper fortran, 500 iterations, 3.938411 seconds, 0.663581 rel error
+ stepper ctypes, 500 iterations, 6.283049 seconds, 0.663581 rel error
+ stepper cython, 500 iterations, 6.085268 seconds, 0.663587 rel error

@@ -1,0 +1,36 @@
+#
+# === Shell
+#
+rm -f *.c~ *.f90~ *.py~ *.o *.pyf
+
+gcc -O2 -mavx -fPIC -c c_fib.c
+gcc -shared cfib.o -o c_fib.so
+
+f2py f_fib.f90 -h f_fib.pyf
+f2py -c f_fib.f90 -m f_fib
+
+
+
+#
+# === Python
+#
+import numpy as np
+
+import ctypes
+from numpy.ctypeslib import ndpointer
+lib = ctypes.cdll.LoadLibrary("./c_fib.so")
+lib.fibonacci.restype = None
+lib.fibonacci.argtypes = [ctypes.c_int, ndpointer(ctypes.c_int, flags="C_CONTIGUOUS")]
+
+a = np.zeros(10, dtype=np.int32)
+
+lib.fibonacci(1, a); print a
+lib.fibonacci(2, a); print a
+lib.fibonacci(3, a); print a
+lib.fibonacci(8, a); print a
+
+from f_fib import fibonacci
+a = fibonacci( 1); print a
+a = fibonacci( 2); print a
+a = fibonacci( 3); print a
+a = fibonacci(10); print a

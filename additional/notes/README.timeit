@@ -1,0 +1,1 @@
+print("cython integration {}".format(timeit("integral.integrate(0.0, 1.0, 100000)", setup="import integral", number=10)))

@@ -1,0 +1,16 @@
+cf. https://github.com/damianavila/RISE
+pip install RISE
+jupyter-nbextension install rise --py --sys-prefix
+jupyter nbextension enable rise --py --sys-prefix
+
+cf. https://github.com/dunovank/jupyter-themes
+pip install --upgrade jupyterthemes
+
+# get a list if themes with 
+jt -l
+# set the theme before running jupyter-notebook
+jt -t grade3 -T -N
+
+Help with markdown at 
+https://sourceforge.net/p/jupiter/wiki/markdown_syntax/
+

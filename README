@@ -1,0 +1,107 @@
+Python for High Performance Computing
+=====================================
+
+
+Aim
+---
+
+Python is an increasingly popular choice for developing scientific
+code, mainly owing to its ease of use and availability of libraries
+for scientific computing.
+
+This course explores some of the solutions the Python programmer needs
+to adopt in order to obtain the code performance required for large
+scientific computations.  First, the popular NumPy and SciPy libraries
+are revised, followed by an introduction to coupling Python with
+compiled language programming (C and Fortran) in order to accelerate
+performance critical code.  Then, some of the options available for
+parallel programming, in order to exploit the availability of multiple
+cores on modern hardware and further improve code performance.
+
+
+Prerequisites
+-------------
+
+This course will assume a level understanding of fundamental
+programming concepts (variables, loops, conditionals, functions as
+well as fundamentals of object-oriented programming).
+
+It will also assume familiarity with basic Python syntax, along with
+data structures such as lists and tuples.
+
+The course will start with a very brief recapitulation of basic Python
+features.  For less experienced programmers, however, a concise
+introductory online course on python programming is available from
+https://www.codecademy.com .
+
+
+Software
+--------
+
+The course is based on Python 2.7.  We strongly the Anaconda
+distribution available from
+
+https://www.continuum.io/downloads
+
+This has all the packages that will be required for the main part of
+the course: Numpy, SciPy, Matplotlib, jupyter.
+
+In addition to that, the course needs
+
+   * a C and a Fortran compiler (gcc and gfortran are recommended)
+   * a MPI library
+   * the mpi4py Python module
+
+
+Contents
+--------
+
+The main contents is in the directories
+
+   images     ... contains images used by all notebooks
+   notebooks  ... contains the jupyter notebooks for the course
+   practicals ... contains the practicals associated with the course
+
+Additional material is in
+
+   additional
+   python_hpc_artwork.pptx
+
+
+Course notebooks
+----------------
+
+The notebooks are all in the directory notebooks.  They are
+
+   lecture00-intro             ... course introduction (general)
+   lecture01-python            ... introducing python
+   lecture02-numpy             ... introducing numpy
+   lecture03-matplotlib        ... introducing matplotlib
+   lecture04-scipy             ... introducing scipy
+   lecture05-extensions        ... (serial) C/Fortran extensions
+   lecture06-cython            ... introducing cython
+   lecture07-summary-first     ... summary of serial solutions tested on the 2D heat equation
+   lecture08-intro-parallel    ... course introduction (to parallel computing)
+   lecture09-extensions-openmp ... (parallel) C/Fortran extensions multithreaded using OpenMP
+   lecture10-numba             ... introducing numba
+   lecture11-summary-second    ... summary of multithreaded solutions tested on the 2D heat equation
+   lecture12-multiprocessing   ... introducing multiprocessing
+   lecture13-mpi4py            ... introducing mpi4py
+   lecture14-conclusion        ... course wrap-up
+
+
+The Lectures
+------------
+Lectures are presented as jupyter notebooks.  To run the notebooks, go to the topmost directory and run
+
+   jupyter notebook
+
+or
+
+   jupyter-notebook
+
+To choose a particular browser, the command is
+
+   jupyter notebook --browser=firefox
+
+Use the web bowser to navigate to individual lectures (e.g. "lecture12-multiprocessing") and start the presentations.

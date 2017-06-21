@@ -1,0 +1,160 @@
+Notes and ideas (13/12/16)
+* move timing information (timeit, time.time, etc.) from the numpy lecture to the introduction
+  ** create a "tools" section in the introduction in which talk about what will be used:
+     *** python implementation itself (talk about anaconda and the Intel distribution)
+     *** ipython shell (and how to start with jupyter-notebook --browser=firefox)
+     *** timeit, time.time
+     *** profiler and debugger tools
+* introduction: state that in the more complicated examples, we'll make use of classes
+* think about ignoring the matplotlib part altogether (keep it as an option for students but do not present it)
+* come up with different example in the scipy lecture
+  ** replace inverting a matrix with something better (e.g. svd example or the eigenvalues of a truss bridge)
+  ** look into preparing an example using optimisation (2D function, plot)
+  ** a better example for convolution(?)
+
+Think about adding something about good programming practices
+* versioning
+* assertions (pre-conditions and post-conditions)
+* creating and maintaining tests
+Use some of the above in the examples given.
+
+Add closing remarks
+* a recap of what's been done
+* what next?  other courses, how can we (the ARC) further help
+* pointers to further study
+
+
+
+
+
+
+Scientific Python Course Material
+
+* Contents
+
+You should see the following subdirectories:
+
+lecture01-intro
+lecture02-numpy
+lecture03-matplotlib
+lecture04-scipy
+lecture05-couple
+lecture06-mpi4py
+
+Lectures are presented as jupyter (formerly ipython) notebooks.
+To run the first notebook:
+
+$ cd lecture01-intro
+$ jupyter-notebook intro.ipynb
+
+or, simply
+
+$ jupyter-notebook
+
+To choose a particular browser, the command is
+
+$ jupyter notebook --browser=firefox
+
+Or, just start jupyter-notebook with no argument in the current
+directory, navigate to the first lecture intro.ipynb and click to start.
+
+Other material includes:
+images  logos etc
+
+What you need to know.
+
+The couese will assume a level understanding of fundamental
+programming concepts: variables, loops, conditionals,
+methods/functions; it will also assume familiarity with
+basic python syntax, along with data structures such as
+lists and tuples. The course will be based on Python 2.7.
+
+For less experienced programmers, a concise introductory online
+course on python programming is available from e.g.,
+https://www.codecademy.com
+
+The course eill start with a very brief recapitulation of basic
+ideas.
+
+What you need to bring.
+
+Attendees should bring a laptop (Windows/Mac/Unix) with the
+following software installed before the start of the course.
+
+* Python 2.7. We strongly recommend installing on your laptop
+the Anaconda distribution of python available from
+
+https://www.continuum.io/downloads
+
+This has all the packages that will be required for the main
+part of the course: Numpy, SciPy, Matplotlib, jupyter.
+
+IMPORTANT. Python 2.7 will be used aas the basis of the course
+(not version 3.x). Please make sure you download the correct
+version.
+
+
+* A text editor for editing python source files.
+
+
+* Connections to the network will be required for use of
+ARCHER guest accounts. You will need at least a secure
+shell (ssh) client, e.g.,
+
+
+For Windows
+
+* An ssh client, and an X-window implementation. These are
+conveniently supplied together by, e.g., MobaXterm
+http://mobaxterm.mobatek.net
+
+For Mac
+
+* ssh (usually installed as a default)
+
+* X-window implementation, e.g., XQuartz http://www.xquartz.org
+(note Mac-style terminal windows are not enough).
+
+
+What will be supplied.
+
+The course presenters will provide guest account details for
+attendees without existing ARCHER accounts.
+
+
+The final part of the course will provide the opportunity to
+run a parallel python code, and/or couple compiled code in
+Fortran or C from python. This requires at least a native
+compiler for Fortran or C, which are available on ARCHER.
+Instructions for ARCHER will be supplied.
+
+Attendees may wish to try parallel python or coupling on their
+own laptops, but will need to arrange installation of the
+appropriate packages/compilers etc.
+
+
+
+
+Timetable (Illustrative rather than prescriptive)
+
+Day 1
+
+09:30 Registration and check installations
+10:00 Introduction to Scientific Python
+11:00 Break
+11:30 Numpy
+13:00 Lunch
+14:00 Matplotlib
+15:00 Break
+15:30 Matplotlib exercises
+16:30 Close
+
+Day 2
+10:00 Scipy
+11:00 Break
+11:30 CFD exercise
+13:00 Lunch
+14:00 C/Fortran Interfaces
+15:00 Break
+15:30 Exercises / Archer
+16:30 Finish
