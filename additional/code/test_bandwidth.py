@@ -1,6 +1,7 @@
 """
    Exercise: measure the (unidirectional) bandwidth between 2 MPI ranks
-   Notes:    this version uses Send()/Recv() and numpy arrays
+   Notes:    * this version uses Send()/Recv() and numpy arrays
+             * performance reported should match that reported by the OSU micro-benchmarks
 """
 
 import sys
